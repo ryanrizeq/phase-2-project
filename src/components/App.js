@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import { Route, Routes } from "react-router-dom";
 import CocktailPage from "./CocktailPage";
 
 
 function App() {
+  const [cocktailData, setCocktailData] = useState([])
+
+  useEffect(() => {
+    fetch()
+  })
+  
   return (
     <div>
       <NavBar />
@@ -15,7 +21,6 @@ function App() {
         >
         </Route>
       </Routes>
-      <h1>The CocktaiList</h1>
     </div>
   );
 }
