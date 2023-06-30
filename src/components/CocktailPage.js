@@ -5,9 +5,14 @@ function CocktailPage( { list }) {
     return (
         <div>
             <h1>Cocktail Page</h1>
-            {list.map((drink) => {
-                <CocktailRender />
-            })}
+            {list.map((drink) => (
+                <CocktailRender
+                    key = {drink.name}
+                    name = {drink.name}
+                    img = {drink.image}
+                    liquor = {drink.liquor}
+                />
+            ))}
         </div>
         
     )
