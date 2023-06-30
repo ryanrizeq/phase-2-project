@@ -1,8 +1,15 @@
 import React from "react";
+import CocktailRender from "./CocktailRender";
 
-function CocktailPage() {
+function CocktailPage( { list }) {
     return (
-        <h1>Cocktail Page</h1>
+        <div>
+            <h1>Cocktail Page</h1>
+            {list.map((drink) => {
+                <CocktailRender />
+            })}
+        </div>
+        
     )
 }
 

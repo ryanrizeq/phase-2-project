@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route 
           path="/list"
-          element={<CocktailPage />}
+          element={<CocktailPage list={cocktailData}/>}
         >
         </Route>
       </Routes>
