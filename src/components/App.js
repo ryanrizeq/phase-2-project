@@ -8,7 +8,9 @@ function App() {
   const [cocktailData, setCocktailData] = useState([])
 
   useEffect(() => {
-    fetch()
+    fetch("http://localhost:3000/cocktails")
+      .then((r) => r.json())
+      .then((data) => setCocktailData(data))
   })
   
   return (
