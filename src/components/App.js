@@ -1,9 +1,13 @@
 import React from "react";
+import NavBar from "./NavBar";
+import { Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <NavBar />
+      <h1>The CocktaiList</h1>
     </div>
   );
 }
