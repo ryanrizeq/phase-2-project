@@ -1,10 +1,14 @@
 import React from "react";
 
 function CocktailForm () {
+    function onSubmit(e) {
+        e.preventDefault()
+    }
+    
     return (
         <div>
             <h1>Add a New Cocktail</h1>
-            <form>
+            <form onSubmit={onSubmit}>
                 <input 
                     type="text"
                     name="Cocktail Name"
