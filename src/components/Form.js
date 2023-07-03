@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CocktailForm () {
+function CocktailForm ({ addNewCocktail }) {
 
     const [formData, setFormData] = useState({
         name: "",
@@ -10,6 +10,7 @@ function CocktailForm () {
 
     function onSubmit(e) {
         e.preventDefault()
+        addNewCocktail(formData)
     }
 
     function handleChange(e) {

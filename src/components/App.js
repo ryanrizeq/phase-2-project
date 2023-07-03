@@ -13,6 +13,10 @@ function App() {
       .then((r) => r.json())
       .then((data) => setCocktailData(data))
   }, [])
+
+  function addNewCocktail(newCocktail) {
+    console.log(newCocktail)
+  }
   
   return (
     <div>
@@ -25,7 +29,7 @@ function App() {
         </Route>
         <Route 
           path="/new"
-          element={<CocktailForm />}
+          element={<CocktailForm addNewCocktail={addNewCocktail}/>}
         >
         </Route>
       </Routes>
