@@ -11,6 +11,7 @@ function CocktailForm ({ addNewCocktail }) {
     function onSubmit(e) {
         e.preventDefault()
         addNewCocktail(formData)
+        alert("Cocktail successfully added to list!")
     }
 
     function handleChange(e) {
