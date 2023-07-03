@@ -12,6 +12,10 @@ To add a new cocktail to their reportoire, the user will need to enter the cockt
 
 This web app repository relies on a separate backend repository, which can be found at this link: https://github.com/ryanrizeq/json-server-phase2-project
 
+# Acknowledgment
+
+I would like to thank TheCocktailDB for providing the images used in this website. 
+
 
 
 
