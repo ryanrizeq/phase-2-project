@@ -25,29 +25,34 @@ function CocktailForm ({ addNewCocktail }) {
             <h1 className="accent">Add a New Cocktail</h1>
             <p><em>For bartender use only!</em></p>
             <form onSubmit={onSubmit}>
+                <label>Cocktail Name</label>
                 <input 
                     type="text"
                     name="name"
                     placeholder="Enter Cocktail Name"
+                    className="input"
                     value={formData.name}
                     onChange={handleChange}
                 />
-                <br />
+                <label>Cocktail Liquor</label>
                 <input 
                     type="text"
                     name="liquor"
-                    placeholder="Enter Cocktail Liqour"
+                    placeholder="Enter Cocktail Liquor"
+                    className="input"
                     value={formData.liquor}
                     onChange={handleChange}
                 />
-                <br />
+                <label>Cocktail Image</label>
                 <input 
                     type="text"
                     name="image"
-                    placeholder="Enter Cocktail Image"
+                    placeholder="Enter Image Link"
+                    className="input"
                     value={formData.link}
                     onChange={handleChange}
                 />
+                <br />
                 <br />
                 <input 
                     type="submit"

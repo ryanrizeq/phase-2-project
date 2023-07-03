@@ -40,3 +40,13 @@ a, a:hover, a:visited, a:active {
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
+
+.input {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
