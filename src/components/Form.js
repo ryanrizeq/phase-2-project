@@ -23,6 +23,7 @@ function CocktailForm ({ addNewCocktail }) {
     return (
         <div>
             <h1 className="accent">Add a New Cocktail</h1>
+            <p><em>For bartender use only!</em></p>
             <form onSubmit={onSubmit}>
                 <input 
                     type="text"
