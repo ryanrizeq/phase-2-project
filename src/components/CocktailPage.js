@@ -4,7 +4,7 @@ import CocktailRender from "./CocktailRender";
 function CocktailPage( { list }) {
     return (
         <div>
-            <h1>Cocktail Page</h1>
+            <h1>Cocktail Résumé</h1>
             {list.map((drink) => (
                 <CocktailRender
                     key = {drink.name}

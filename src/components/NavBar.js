@@ -14,10 +14,10 @@ function NavBar() {
             Home
           </NavLink>
           <NavLink style={{ marginRight: "10px" }} to="/list">
-            Cocktail List
+            Cocktail Résumé
           </NavLink>
           <NavLink style={{ marginRight: "10px" }} to="/new">
-            Add New Cocktail
+            Add to Résumé
           </NavLink>
         </div>
         

@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import { Route, Routes } from "react-router-dom";
 import CocktailPage from "./CocktailPage";
 import CocktailForm from "./Form";
+import Home from "./Home";
 
 
 function App() {
@@ -37,6 +38,11 @@ function App() {
         <Route 
           path="/new"
           element={<CocktailForm addNewCocktail={addNewCocktail}/>}
+        >
+        </Route>
+        <Route 
+          path="/"
+          element={<Home />}
         >
         </Route>
       </Routes>
