@@ -12,24 +12,10 @@ function CocktailForm () {
         e.preventDefault()
     }
 
-    function handleNameChange(e) {
+    function handleChange(e) {
         setFormData({
             ...formData,
-            name: e.target.value
-        })
-    }
-
-    function handleLiqourChange(e) {
-        setFormData({
-            ...formData,
-            liqour: e.target.value
-        })
-    }
-
-    function handleLinkChange(e) {
-        setFormData({
-            ...formData,
-            link: e.target.value
+            [e.target.name]: e.target.value
         })
     }
 
@@ -39,26 +25,26 @@ function CocktailForm () {
             <form onSubmit={onSubmit}>
                 <input 
                     type="text"
-                    name="Cocktail Name"
+                    name="name"
                     placeholder="Enter Cocktail Name"
                     value={formData.name}
-                    onChange={handleNameChange}
+                    onChange={handleChange}
                 />
                 <br />
                 <input 
                     type="text"
-                    name="Cocktail Liqour"
+                    name="liqour"
                     placeholder="Enter Cocktail Liqour"
                     value={formData.liqour}
-                    onChange={handleLiqourChange}
+                    onChange={handleChange}
                 />
                 <br />
                 <input 
                     type="text"
-                    name="Cocktail Image Link"
+                    name="link"
                     placeholder="Enter Cocktail Image"
                     value={formData.link}
-                    onChange={handleLinkChange}
+                    onChange={handleChange}
                 />
                 <br />
                 <input 
