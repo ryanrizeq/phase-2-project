@@ -22,7 +22,7 @@ function CocktailForm ({ addNewCocktail }) {
 
     return (
         <div>
-            <h1>Add a New Cocktail</h1>
+            <h1 className="accent">Add a New Cocktail</h1>
             <form onSubmit={onSubmit}>
                 <input 
                     type="text"
