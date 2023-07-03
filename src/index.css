@@ -50,3 +50,9 @@ a, a:hover, a:visited, a:active {
     border-radius: 20px;
     box-sizing: border-box;
 }
+
+.submit {
+    border-radius: 20px;
+    background-color: #2568FB;
+    color: white;
+}

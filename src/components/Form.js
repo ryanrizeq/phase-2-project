@@ -58,6 +58,7 @@ function CocktailForm ({ addNewCocktail }) {
                     type="submit"
                     name="Submit New Cocktail"
                     placeholder="Submit"
+                    className="submit"
                 />
             </form>
         </div>
