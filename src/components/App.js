@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import { Route, Routes } from "react-router-dom";
 import CocktailPage from "./CocktailPage";
+import CocktailForm from "./Form";
 
 
 function App() {
@@ -20,6 +21,11 @@ function App() {
         <Route 
           path="/list"
           element={<CocktailPage list={cocktailData}/>}
+        >
+        </Route>
+        <Route 
+          path="/new"
+          element={<CocktailForm />}
         >
         </Route>
       </Routes>
