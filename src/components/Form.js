@@ -20,7 +20,13 @@ function CocktailForm () {
                 <input 
                     type="text"
                     name="Cocktail Image Link"
-                    placeholder="Enter Cocktail Image Link"
+                    placeholder="Enter Cocktail Image"
+                />
+                <br />
+                <input 
+                    type="submit"
+                    name="Submit New Cocktail"
+                    placeholder="Submit"
                 />
             </form>
         </div>
