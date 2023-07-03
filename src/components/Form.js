@@ -4,8 +4,8 @@ function CocktailForm ({ addNewCocktail }) {
 
     const [formData, setFormData] = useState({
         name: "",
-        liqour: "",
-        link: ""
+        liquor: "",
+        image: ""
     })
 
     function onSubmit(e) {
@@ -34,15 +34,15 @@ function CocktailForm ({ addNewCocktail }) {
                 <br />
                 <input 
                     type="text"
-                    name="liqour"
+                    name="liquor"
                     placeholder="Enter Cocktail Liqour"
-                    value={formData.liqour}
+                    value={formData.liquor}
                     onChange={handleChange}
                 />
                 <br />
                 <input 
                     type="text"
-                    name="link"
+                    name="image"
                     placeholder="Enter Cocktail Image"
                     value={formData.link}
                     onChange={handleChange}

@@ -15,7 +15,14 @@ function App() {
   }, [])
 
   function addNewCocktail(newCocktail) {
-    console.log(newCocktail)
+    fetch("http://localhost:3000/cocktails", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json"
+      },
+      body: JSON.stringify(newCocktail)
+    })
+    setCocktailData([...cocktailData, newCocktail])
   }
   
   return (
