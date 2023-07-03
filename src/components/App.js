@@ -25,7 +25,6 @@ function App() {
     })
       .then((r) => r.json())
       .then((data) => {
-        console.log(data)
         setCocktailData([...cocktailData, data])
       })
   }
